@@ -38,7 +38,39 @@
 - git log 完整版日志
 - git reflog 简单版日志
 
-## 版本回退
+## 版本回退（必须提交到本地仓库才能查看 回退）
 - git reset --hart HEAD^   (回退到上一个版本[一个^表示回退上一个版本，可多个])
 - git reset --hart 版本号    回退到指定版本
 - 注意把当前代码提交到本地仓库
+
+## 查看变动
+- git diff 文件名
+- 会列出文件前后变化
+
+## 创建远程仓库
+- 进入github官网
+- 创建一个新的远程仓库
+
+## 将本地仓库和远程仓库关联
+- git remote add origin 你的远程仓库地址
+- git remote -v       查看本地仓库关联的远程仓库地址
+
+## 将本地仓库提交到远程仓库
+- git push -u origin master     第一次提交到远程（设置默认的提交地址和分支）
+- git push      将本地仓库提交到远程仓库
+
+## 修改关联的远程仓库
+- git remote rm origin
+- git remote add origin ssh地址
+- git clone 远程仓库地址   克隆代码到本地
+
+## 更新代码
+- 确保自己工作区的代码先提交到本地仓库
+- 然后再从远程更新到本地 git pull
+
+
+## 分支操作
+- git branch   查看当前所有分支
+- 当前分支名前有个星号
+
+  
